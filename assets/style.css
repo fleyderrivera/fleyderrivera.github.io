@@ -210,3 +210,5 @@ img,iframe,video{max-width:100%}
 .form-box p{color:#ccc;font-size:20px;margin:0}
 .form-box iframe{width:100%;min-height:900px;border:0}
 .contact-list a{color:var(--w);text-decoration:underline;overflow-wrap:anywhere}
+.apoiadores .wrap{text-align:center}.apoiadores p:has(> .btn){display:flex;justify-content:center}.apoiadores .btn{margin-left:auto;margin-right:auto}
+.apoiadores .wrap>*{margin-left:auto;margin-right:auto}
