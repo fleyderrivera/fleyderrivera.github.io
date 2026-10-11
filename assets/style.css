@@ -255,3 +255,8 @@ section.canal .canal-qr figcaption{color:#FFD200;text-align:center}
 .car-dots button[aria-current="true"]{background:#FFD200;transform:scale(1.3)}
 @media (prefers-reduced-motion:reduce){.car-track{transition:none}}
 @media (max-width:640px){.car-btn{width:36px;height:36px;font-size:16px}.car-dots button{width:8px;height:8px}}
+
+/* v10: logos apoiadores */
+.sponsors li{background:#fff;display:flex;align-items:center;justify-content:center;padding:14px;min-height:110px}
+.sponsors li img{max-width:100%;max-height:90px;width:auto;height:auto;object-fit:contain}
+.sponsors li{border:1px solid #e3e3e3 !important;border-radius:12px}
