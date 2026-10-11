@@ -176,3 +176,37 @@ img.hero-photo{display:block;height:auto;object-fit:cover;aspect-ratio:16/10}
 @media(min-width:760px){.strip{flex-direction:row;align-items:stretch}.strip-img{width:36%;min-height:240px}.strip-txt{flex:1;padding:36px 40px;align-self:center}}
 /* v4: feed do Instagram oculto se vazio */
 #instagram-feed:empty{display:none}
+
+/* ===== v5: legibilidade (fonte) + responsivo ===== */
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:clamp(16px,0.9rem + .25vw,20px);line-height:1.65;letter-spacing:normal;word-spacing:.04em;overflow-x:hidden}
+h1,h2,h3,.step .n,.card-big strong,.fund b,.insta .handle,.map-label strong{font-family:inherit;font-weight:700;text-transform:none;letter-spacing:normal;line-height:1.2}
+h1,h2,h3{font-weight:700}
+h2{font-size:clamp(26px,1.2rem + 2.4vw,46px)}
+.hero h1,.page-hero h1{font-size:clamp(32px,1.4rem + 4vw,68px);line-height:1.15}
+.tag,.btn,.nav,.logo,.card-big small,.ac .go,.news .soon,.sponsors li,.photo-ph{letter-spacing:.02em}
+.tag{transform:none;font-size:14px}
+.btn{text-transform:none;font-size:17px;line-height:1.3;max-width:100%;white-space:normal}
+.nav{font-size:15px;text-transform:none}
+.step .n{font-size:48px}
+.step h3,.ac h3,.news h3,.pill h3{font-size:clamp(20px,1rem + .6vw,24px)}
+p,li{max-width:70ch}
+.quote{font-weight:400;font-style:normal}
+img,iframe,video{max-width:100%}
+.wrap{max-width:min(1200px,100%);padding:0 clamp(16px,4vw,40px)}
+@media(min-width:1600px){.wrap{max-width:1400px}}
+/* nav no celular: logo em cima, links em grade */
+@media(max-width:600px){
+ .top .wrap{flex-direction:column;align-items:center}
+ .nav{width:100%;justify-content:center;gap:2px 14px}
+ .nav a{padding:8px 4px}
+ .btns .btn{width:100%;justify-content:center}
+}
+/* contato e formulário */
+.contact-list{list-style:none;margin:20px 0 0;display:grid;gap:10px}
+.contact-list li{background:var(--k);color:var(--w)!important;padding:14px 18px;border-left:6px solid var(--y);font-size:clamp(17px,1rem + .4vw,21px);max-width:none}
+.contact-list b{color:var(--y)}
+.form-box{margin-top:24px;min-height:220px;border:3px dashed #777;display:flex;align-items:center;justify-content:center;background:#111}
+.form-box p{color:#ccc;font-size:20px;margin:0}
+.form-box iframe{width:100%;min-height:900px;border:0}
+.contact-list a{color:var(--w);text-decoration:underline;overflow-wrap:anywhere}
