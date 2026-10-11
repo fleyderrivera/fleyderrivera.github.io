@@ -232,3 +232,26 @@ img,iframe,video{max-width:100%}
 .canal-qr img{width:160px;height:160px;background:#fff;padding:6px;border-radius:12px;display:block;margin:0 auto}
 .canal-qr figcaption{font-size:13px;line-height:1.3;margin-top:6px}
 @media (max-width:640px){.canal-grid{flex-direction:column;text-align:center;gap:18px}.canal-txt{text-align:center}.canal-txt p{margin-left:auto;margin-right:auto}}
+
+/* v9: canal - texto amarelo a esquerda, QR a direita */
+section.canal{background:#0b0b0b !important;color:#FFD200 !important;padding:32px 20px !important}
+section.canal .wrap.canal-grid{display:flex !important;flex-direction:row !important;align-items:center !important;justify-content:space-between !important;gap:40px;max-width:1000px;margin:0 auto}
+section.canal .canal-txt{flex:1 1 auto;text-align:left !important}
+section.canal .canal-txt h2,section.canal .canal-txt p{color:#FFD200 !important;text-align:left !important;margin-left:0}
+section.canal .canal-qr{flex:0 0 200px;width:200px;margin:0;text-align:center}
+section.canal .canal-qr figcaption{color:#FFD200;text-align:center}
+@media (max-width:640px){section.canal .wrap.canal-grid{flex-direction:column !important;gap:18px}section.canal .canal-txt,section.canal .canal-txt h2,section.canal .canal-txt p{text-align:center !important}}
+/* v9: carrossel galeria */
+.car{position:relative;max-width:960px;margin:24px auto 0;border-radius:14px;overflow:hidden;background:#111}
+.car-view{overflow:hidden;aspect-ratio:4/3}
+.car-track{display:flex;list-style:none;margin:0;padding:0;height:100%;transition:transform .6s ease}
+.car-slide{flex:0 0 100%;height:100%}
+.car-slide img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.car-btn{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border:0;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:20px;cursor:pointer;z-index:2}
+.car-btn:hover,.car-btn:focus-visible{background:#FFD200;color:#000;outline:none}
+.car-prev{left:10px}.car-next{right:10px}
+.car-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;flex-wrap:wrap;gap:6px;padding:0 50px}
+.car-dots button{width:10px;height:10px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.55);cursor:pointer}
+.car-dots button[aria-current="true"]{background:#FFD200;transform:scale(1.3)}
+@media (prefers-reduced-motion:reduce){.car-track{transition:none}}
+@media (max-width:640px){.car-btn{width:36px;height:36px;font-size:16px}.car-dots button{width:8px;height:8px}}
