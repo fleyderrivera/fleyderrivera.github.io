@@ -221,3 +221,14 @@ img,iframe,video{max-width:100%}
 @media(max-width:600px){.hero img.hero-photo{margin-bottom:28px}.hero{padding-bottom:48px}}
 /* v7: centralizar textos em secoes centralizadas (p tem max-width:70ch) */
 .insta p,.insta h2,.apoie p,.apoie h2,.apoiadores p,.apoiadores h2{margin-left:auto;margin-right:auto}
+/* Canal de notícias (WhatsApp) */
+.canal{background:#FFD200;color:#111;padding:28px 20px}
+.canal-grid{display:flex;align-items:center;justify-content:space-between;gap:32px;max-width:900px;margin:0 auto}
+.canal-txt{text-align:left;flex:1}
+.canal-txt h2{margin:0 0 8px;color:#111}
+.canal-txt p{margin:0 0 14px;max-width:520px}
+.canal .canal-btn{background:#111;color:#FFD200}
+.canal-qr{margin:0;text-align:center;width:180px;flex:0 0 auto}
+.canal-qr img{width:160px;height:160px;background:#fff;padding:6px;border-radius:12px;display:block;margin:0 auto}
+.canal-qr figcaption{font-size:13px;line-height:1.3;margin-top:6px}
+@media (max-width:640px){.canal-grid{flex-direction:column;text-align:center;gap:18px}.canal-txt{text-align:center}.canal-txt p{margin-left:auto;margin-right:auto}}
