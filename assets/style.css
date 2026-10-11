@@ -6,7 +6,6 @@ a{color:inherit;text-decoration:none}
 h1,h2,h3{font-family:Impact,"Arial Narrow Bold","Arial Black","Helvetica Neue",sans-serif;text-transform:uppercase;letter-spacing:.5px;line-height:1}
 h2{font-size:clamp(32px,6vw,56px);margin-bottom:18px}
 .tag{display:inline-block;background:var(--y);color:var(--k);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;padding:4px 10px;margin-bottom:14px;transform:skewX(-10deg)}
-.stripe{height:14px;background:repeating-linear-gradient(-45deg,var(--y) 0 14px,var(--k) 14px 28px)}
 .btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:15px;padding:14px 24px;border:3px solid var(--y);transition:background .2s,color .2s,transform .2s}
 .btn svg{width:18px;height:18px}
 .btn-y{background:var(--y);color:var(--k)}
@@ -28,7 +27,6 @@ section{padding:72px 0}
 .nav a:hover{color:var(--k);border-color:var(--k)}
 /* hero */
 .hero{position:relative;overflow:hidden;padding:90px 0 100px;background:radial-gradient(circle at 85% 30%,#2a2400 0,var(--k) 55%)}
-.hero:before{content:"";position:absolute;right:-120px;top:0;bottom:0;width:55%;background:repeating-linear-gradient(-60deg,transparent 0 40px,rgba(255,210,0,.08) 40px 80px);transform:skewX(-15deg)}
 .hero:after{z-index:0;content:"";position:absolute;right:8%;bottom:-40px;width:240px;height:240px;border:18px solid var(--y);transform:rotate(45deg);opacity:.9}
 .hero .wrap{position:relative;z-index:1}
 .hero h1{font-size:clamp(52px,12vw,128px);max-width:900px}
@@ -85,11 +83,12 @@ section{padding:72px 0}
 .insta p{color:#ccc;font-size:18px}
 .insta .handle{font-family:Impact,"Arial Black",sans-serif;font-size:clamp(28px,6vw,48px);color:var(--y);display:block;margin:6px 0}
 /* footer */
-footer{background:#000;padding:36px 0;font-size:14px;color:#999}
+footer{background:var(--y);padding:36px 0;font-size:14px;color:var(--k);border-top:2px solid var(--k)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
-footer b{color:var(--w)}
+footer b{color:var(--k)}
+footer a{color:var(--k);font-weight:700}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 16px}
-footer a:hover{color:var(--y)}
+footer a:hover{text-decoration:underline}
 @media(min-width:760px){
  .grid2{grid-template-columns:1.1fr 1fr;align-items:center}
  .steps{grid-template-columns:repeat(3,1fr)}
@@ -103,10 +102,8 @@ footer a:hover{color:var(--y)}
 .skip{position:absolute;left:-999px;top:0;background:var(--y);color:var(--k);padding:8px 12px;z-index:9}
 .skip:focus{left:8px}
 a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(--w);outline-offset:3px}
-.top a:focus-visible{outline-color:var(--k)}
+.top a:focus-visible,footer a:focus-visible{outline-color:var(--k)}
 .nav a[aria-current="page"]{border-color:var(--k)}
-.nav .sub{font-size:11px;opacity:.85}
-.nav .sub:before{content:"↳ "}
 .page-hero{padding:64px 0 56px;background:radial-gradient(circle at 85% 30%,#2a2400 0,var(--k) 55%)}
 .page-hero h1{font-size:clamp(40px,9vw,88px)}
 .page-hero h1 span{color:var(--y)}
@@ -126,8 +123,8 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(-
 .apoiadores p{color:#444;margin-bottom:24px}
 .sponsors{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;list-style:none}
 .sponsors li{border:2px dashed #999;min-height:96px;display:flex;align-items:center;justify-content:center;color:#777;font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:1px;background:#fff}
-.foot-loc{flex-basis:100%;color:#ccc}
-.foot-loc a{color:var(--y);text-decoration:underline}
+.foot-loc{flex-basis:100%;color:#222}
+.foot-loc a{color:var(--k);text-decoration:underline}
 @media(min-width:760px){.news{grid-template-columns:repeat(2,1fr)}.sponsors{grid-template-columns:repeat(3,1fr)}.links{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.sponsors{grid-template-columns:repeat(6,1fr)}}
 .pill{min-width:0;overflow-wrap:anywhere}@media(max-width:480px){.pill{padding:16px 12px}.pill h3{font-size:18px}}
@@ -142,7 +139,7 @@ a:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid var(-
 .hero:after{display:none}
 .hero{padding:56px 0 64px}
 .hero h1{font-size:clamp(44px,8vw,88px)}
-.photo-ph{background:#8a8a8a repeating-linear-gradient(45deg,#8a8a8a 0 16px,#939393 16px 32px);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;text-transform:uppercase;letter-spacing:2px;text-shadow:0 1px 2px #0006}
+.photo-ph{background:#8a8a8a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;text-transform:uppercase;letter-spacing:2px;text-shadow:0 1px 2px #0006}
 .hero-photo{aspect-ratio:16/10;width:100%;font-size:20px;border-bottom:6px solid var(--y)}
 .gal{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .gal li{aspect-ratio:4/3;font-size:14px}
@@ -152,3 +149,30 @@ img.hero-photo{display:block;height:auto;object-fit:cover;aspect-ratio:16/10}
 .gal li{overflow:hidden;background:#ddd}
 .gal img{width:100%;height:100%;object-fit:cover;display:block}
 #instagram-feed{max-width:720px;margin:24px auto 0}.ig-ph{aspect-ratio:1/1;font-size:13px}
+
+/* v4: mapa embutido */
+.map-box{position:relative;min-height:340px;background:#1a1a1a;overflow:hidden;border:4px solid var(--y)}
+.map-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.map-label{position:absolute;left:12px;bottom:12px;right:12px;max-width:340px;background:rgba(0,0,0,.85);color:var(--w);padding:10px 14px;font-size:13px;line-height:1.35;border-left:4px solid var(--y)}
+.map-label strong{display:block;color:var(--y);font-size:15px;text-transform:uppercase}
+.map-label span{display:block}
+.map-label a{display:inline-block;margin-top:4px;color:var(--y);text-decoration:underline;font-weight:700}
+@media(min-width:760px){.map-box{min-height:400px}}
+/* v4: faixas de notícias */
+.strips{display:grid;gap:24px}
+.strip{display:flex;flex-direction:column;background:var(--k);color:var(--w);overflow:hidden;border-bottom:5px solid var(--y)}
+.strip-img{flex:none;min-height:200px;display:flex;align-items:center;justify-content:center}
+.strip-img-y{background:var(--y)}
+.strip-img-y img{height:130px;width:auto}
+.strip-img-ph{background:#e6e6e6;border:2px dashed #999}
+.strip-txt{padding:26px 24px}
+.strip-txt h2{font-size:clamp(26px,4vw,38px);margin-bottom:10px}
+.light .strip-txt p{color:#ccc;font-size:17px}
+.strip-txt .btns{margin-top:18px}
+.strip-txt .btn-k{background:var(--y);color:var(--k);border-color:var(--y)}
+.strip-link{transition:transform .2s}
+.strip-link:hover{transform:translateY(-3px)}
+.strip-link:hover .btn{background:var(--w);border-color:var(--w)}
+@media(min-width:760px){.strip{flex-direction:row;align-items:stretch}.strip-img{width:36%;min-height:240px}.strip-txt{flex:1;padding:36px 40px;align-self:center}}
+/* v4: feed do Instagram oculto se vazio */
+#instagram-feed:empty{display:none}
