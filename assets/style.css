@@ -212,3 +212,12 @@ img,iframe,video{max-width:100%}
 .contact-list a{color:var(--w);text-decoration:underline;overflow-wrap:anywhere}
 .apoiadores .wrap{text-align:center}.apoiadores p:has(> .btn){display:flex;justify-content:center}.apoiadores .btn{margin-left:auto;margin-right:auto}
 .apoiadores .wrap>*{margin-left:auto;margin-right:auto}
+/* v7: hero full-width (foto inteira) + texto abaixo */
+.hero{padding:0 0 64px}
+.hero img.hero-photo{display:block;width:100%;max-width:none;height:auto;aspect-ratio:auto;object-fit:initial;border-bottom:6px solid var(--y);margin:0 0 40px}
+.hero-box{text-align:center}
+.hero-box h1,.hero-box p{margin-left:auto;margin-right:auto}
+.hero-box .btns{justify-content:center}
+@media(max-width:600px){.hero img.hero-photo{margin-bottom:28px}.hero{padding-bottom:48px}}
+/* v7: centralizar textos em secoes centralizadas (p tem max-width:70ch) */
+.insta p,.insta h2,.apoie p,.apoie h2,.apoiadores p,.apoiadores h2{margin-left:auto;margin-right:auto}
